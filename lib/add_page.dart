@@ -51,6 +51,9 @@ class _AddPageState extends State<AddPage> {
                   border: OutlineInputBorder(),
                   hintText: 'Enter phone number',
                 ),
+
+                  keyboardType: TextInputType.number
+
               ),
               SizedBox(height: 5,),
 

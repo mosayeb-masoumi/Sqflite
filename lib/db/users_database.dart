@@ -106,6 +106,14 @@ CREATE TABLE $tableUsers (
     );
   }
 
+  Future<int> deleteAll() async {
+    final db = await instance.database;
+
+    return await db.delete(
+      tableUsers,
+    );
+  }
+
 
   Future close() async {
     final db = await instance.database;
