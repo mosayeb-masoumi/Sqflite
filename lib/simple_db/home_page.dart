@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sqflite_flutter/add_page.dart';
-import 'package:sqflite_flutter/db/users_database.dart';
-import 'package:sqflite_flutter/edit_page.dart';
-import 'package:sqflite_flutter/model/user_model.dart';
+import 'package:sqflite_flutter/simple_db/db/users_database.dart';
+import 'package:sqflite_flutter/simple_db/model/user_model.dart';
+import 'add_page.dart';
+import 'package:sqflite_flutter/simple_db/edit_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

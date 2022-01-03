@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sqflite_flutter/home_page.dart';
+import 'package:sqflite_flutter/simple_db/home_page.dart';
+import 'package:sqflite_flutter/start_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: StartPage(),
     );
   }
 }

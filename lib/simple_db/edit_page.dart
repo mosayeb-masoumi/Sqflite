@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:sqflite_flutter/db/users_database.dart';
-import 'package:sqflite_flutter/model/user_model.dart';
+import 'package:sqflite_flutter/simple_db/db/users_database.dart';
+import 'package:sqflite_flutter/simple_db/model/user_model.dart';
 
 class EditPage extends StatefulWidget {
   UserModel userModel;

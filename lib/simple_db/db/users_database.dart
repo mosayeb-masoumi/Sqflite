@@ -1,6 +1,7 @@
 import 'package:sqflite/sqflite.dart';
-import 'package:sqflite_flutter/model/user_model.dart';
+// import 'package:sqflite_flutter/model/user_model.dart';
 import 'package:path/path.dart';
+import 'package:sqflite_flutter/simple_db/model/user_model.dart';
 
 
 class UsersDatabase{

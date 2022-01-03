@@ -51,14 +51,26 @@ class UserModel {
         createdTime: createdTime ?? this.createdTime,
       );
 
-  static UserModel fromJson(Map<String, Object?> json) => UserModel(
-    id: json[UserModelFields.id] as int?,
-    isMarried: json[UserModelFields.isMarried] == 1,
-    phoneNumber: json[UserModelFields.phoneNumber] as int,
-    name: json[UserModelFields.name] as String,
-    family: json[UserModelFields.family] as String,
-    createdTime: DateTime.parse(json[UserModelFields.createdTime] as String),
-  );
+  // static UserModel fromJson(Map<String, Object?> json) => UserModel(
+  //   id: json[UserModelFields.id] as int?,
+  //   isMarried: json[UserModelFields.isMarried] == 1,
+  //   phoneNumber: json[UserModelFields.phoneNumber] as int,
+  //   name: json[UserModelFields.name] as String,
+  //   family: json[UserModelFields.family] as String,
+  //   createdTime: DateTime.parse(json[UserModelFields.createdTime] as String),
+  // );
+
+  static UserModel fromJson(Map<String, Object?> json){
+    return UserModel(
+      id: json[UserModelFields.id] as int?,
+      isMarried: json[UserModelFields.isMarried] == 1,
+      phoneNumber: json[UserModelFields.phoneNumber] as int,
+      name: json[UserModelFields.name] as String,
+      family: json[UserModelFields.family] as String,
+      createdTime: DateTime.parse(json[UserModelFields.createdTime] as String));
+  }
+
+
 
   Map<String, Object?> toJson() => {
     UserModelFields.id: id,
